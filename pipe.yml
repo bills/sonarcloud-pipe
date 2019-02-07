@@ -1,0 +1,15 @@
+name: SonarCloud scan
+description: Performs a SonarCloud code scan
+image: sonarsouce/sonarcloud-scan:0.1.0
+repository: https://bitbucket.org/sonarsource/sonarcloud-scan
+maintainer: contact@sonarsource.com
+tags:
+  - Sonar
+  - SonarCloud
+  - SonarQube
+  - SonarLint
+  - SonarSource
+  - pull request
+  - code analysis
+  - code coverage
+  - quality gate
