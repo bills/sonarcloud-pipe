@@ -1,6 +1,10 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
+## 0.1.1
+
+- patch: Added NodeJS support
+
 ## 0.1.0
 
 - minor: Initial version of the pipe

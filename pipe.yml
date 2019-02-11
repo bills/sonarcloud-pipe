@@ -1,6 +1,6 @@
 name: SonarCloud scan
 description: Performs a SonarCloud code scan
-image: sonarsource/sonarcloud-scan:0.1.0
+image: sonarsource/sonarcloud-scan:0.1.1
 repository: https://bitbucket.org/sonarsource/sonarcloud-scan
 maintainer: contact@sonarsource.com
 tags:
