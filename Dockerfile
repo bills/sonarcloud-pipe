@@ -1,5 +1,5 @@
 FROM openjdk:11.0.2-jdk-slim-stretch
-RUN apt-get update && apt-get install -y --no-install-recommends git wget
+RUN apt-get update && apt-get install -y --no-install-recommends git mercurial wget
 
 ARG SONAR_SCANNER_HOME=/opt/sonar-scanner
 ARG NODEJS_HOME=/opt/nodejs
