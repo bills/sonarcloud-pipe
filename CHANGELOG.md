@@ -1,6 +1,10 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
+## 0.1.4
+
+- patch: Switched to JRE; added an icon
+
 ## 0.1.3
 
 - patch: Add Mercurial support
