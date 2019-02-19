@@ -3,6 +3,7 @@ description: Performs a SonarCloud code scan
 image: sonarsource/sonarcloud-scan:0.1.3
 repository: https://bitbucket.org/sonarsource/sonarcloud-scan
 maintainer: contact@sonarsource.com
+icon: https://sonarcloud.io/images/sonarcloud-square-logo.svg
 tags:
   - Sonar
   - SonarCloud
