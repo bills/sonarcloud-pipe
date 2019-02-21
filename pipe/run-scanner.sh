@@ -4,8 +4,8 @@ source "$(dirname "$0")/common.sh"
 
 parse_environment_variables() {
   EXTRA_ARGS=${EXTRA_ARGS:=""}
-  SONAR_TOKEN=${SONAR_TOKEN:?'SONAR_TOKEN environment variable missing.'}
-  BITBUCKET_CLONE_DIR=${BITBUCKET_CLONE_DIR:?'BITBUCKET_CLONE_DIR environment variable missing.'}
+  SONAR_TOKEN=${SONAR_TOKEN:?'SONAR_TOKEN variable missing.'}
+  BITBUCKET_CLONE_DIR=${BITBUCKET_CLONE_DIR:?'BITBUCKET_CLONE_DIR variable missing.'}
 }
 
 parse_environment_variables
