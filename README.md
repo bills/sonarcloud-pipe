@@ -54,7 +54,7 @@ A bit more advanced example:
 ## Support
 If you would like help with this pipe, or you have an issue or feature request, [let us know on our community forum](https://community.sonarsource.com/tags/bitbucket).
 
-If you arere reporting an issue, please include:
+If you are reporting an issue, please include:
 
 * the version of the pipe
 * relevant logs and error messages
