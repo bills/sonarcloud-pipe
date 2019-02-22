@@ -1,5 +1,7 @@
-# Bitbucket Pipelines Pipe: sonarcloud-scan
-Pipe that starts a code scan on SonarCloud.
+# Bitbucket Pipelines Pipe: Sonarcloud scan
+Scan your code with [SonarCloud](https://sonarcloud.io) to detects bugs, vulnerabilities and code smells in more than 25 programming languages.
+
+Your SonarCloud account must first be associated to your Bitbucket team or user account. SonarCloud is totally free for open-source projects. If your code is closed source, SonarCloud also offers a paid plan to run private analyses.
 
 _NOTE: For projects using Maven or Gradle please execute a respective scanner directly instead of using this pipe (see [examples](https://bitbucket.org/account/user/sonarsource/projects/SAMPLES))._
 
@@ -24,10 +26,11 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 _(*) = required variable._
 
 ## Details
-This pipe triggers code scan on [SonarCloud](https://sonarcloud.io). SonarCloud is a cloud service that inspects the quality of source code and detects bugs, vulnerabilities and code smells in more than 20 different languages.
+This pipe encapsulates the execution of SonarCloud code analyzer in order to detect bugs, vulnerabilities and code smells. SonarCloud can then decorate your Pull Requests and report back with code quality information. Getting started guide available here: [Get started with Bitbucket Cloud
+](https://sonarcloud.io/documentation/integrations/bitbucketcloud/).
 
 ## Prerequisites
-To use this pipe you have to set up a project on SonarCloud and configure a secure variable named `SONAR_TOKEN` on your repository or team/personal Bitbucket Account. Please check [this page](https://sonarcloud.io/documentation/integrations/bitbucketcloud/) for more information.
+To use this pipe you have to set up a project on SonarCloud, then use the generated token in a secure variable named `SONAR_TOKEN` on your repository or team/personal Bitbucket Account.
 
 ## Examples
 Basic example:
@@ -50,7 +53,7 @@ A bit more advanced example:
 ```
 
 ## Support
-If you would like help with this pipe, or you have an issue or feature request, [let us know on our community forum](https://community.sonarsource.com/tags/bitbucket).
+If you would like help with this pipe, or you have an issue or feature request, [let us know on our community forum](https://community.sonarsource.com/tags/c/help/sc/bitbucket).
 
 If you are reporting an issue, please include:
 
