@@ -1,16 +1,14 @@
 name: SonarCloud scan
-description: Performs a SonarCloud code scan
+description: Detect bugs & vulnerabilities in your repository
 image: sonarsource/sonarcloud-scan:0.1.4
 repository: https://bitbucket.org/sonarsource/sonarcloud-scan
 maintainer: contact@sonarsource.com
 icon: https://sonarcloud.io/images/sonarcloud-square-logo.svg
 tags:
-  - Sonar
   - SonarCloud
-  - SonarQube
-  - SonarLint
   - SonarSource
   - pull request
   - code analysis
+  - code quality
   - code coverage
   - quality gate
