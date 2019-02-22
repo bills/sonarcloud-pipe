@@ -11,8 +11,6 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
   variables:
     SONAR_TOKEN: ${SONAR_TOKEN} # Use a secure repository or account variable
     # EXTRA_ARGS: "<string>" # Optional.
-    # SONAR_SCANNER_OPTS: "<string>" # Optional.
-    # DEBUG: "<boolean>" # Optional.
 ```
 
 ## Variables
