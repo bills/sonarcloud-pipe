@@ -1,4 +1,4 @@
-# Bitbucket Pipelines Pipe: Sonarcloud scan
+# Bitbucket Pipelines Pipe: SonarCloud scan
 Scan your code with [SonarCloud](https://sonarcloud.io) to detects bugs, vulnerabilities and code smells in more than 25 programming languages.
 
 Your SonarCloud account must first be associated to your Bitbucket team or user account. SonarCloud is totally free for open-source projects. If your code is closed source, SonarCloud also offers a paid plan to run private analyses.
@@ -26,8 +26,7 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 _(*) = required variable._
 
 ## Details
-This pipe encapsulates the execution of SonarCloud code analyzer in order to detect bugs, vulnerabilities and code smells. SonarCloud can then decorate your Pull Requests and report back with code quality information. Getting started guide available here: [Get started with Bitbucket Cloud
-](https://sonarcloud.io/documentation/integrations/bitbucketcloud/).
+This pipe encapsulates the execution of SonarCloud code analyzer in order to detect bugs, vulnerabilities and code smells. SonarCloud can then decorate your Pull Requests and report back with code quality information. Getting started guide available here: [Get started with Bitbucket Cloud](https://sonarcloud.io/documentation/integrations/bitbucketcloud/).
 
 ## Prerequisites
 To use this pipe you have to set up a project on SonarCloud, then use the generated token in a secure variable named `SONAR_TOKEN` on your repository or team/personal Bitbucket Account.
