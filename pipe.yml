@@ -1,6 +1,6 @@
 name: SonarCloud scan
 description: Detect bugs & vulnerabilities in your repository
-image: sonarsource/sonarcloud-scan:0.1.4
+image: sonarsource/sonarcloud-scan:0.1.5
 repository: https://bitbucket.org/sonarsource/sonarcloud-scan
 maintainer: contact@sonarsource.com
 icon: https://sonarcloud.io/images/sonarcloud-square-logo.svg

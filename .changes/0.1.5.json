@@ -1,0 +1,6 @@
+[
+  {
+    "description": "Standardise pipe variable validation messages.",
+    "type": "patch"
+  }
+]

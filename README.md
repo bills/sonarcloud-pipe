@@ -9,7 +9,7 @@ _NOTE: For projects using Maven or Gradle please execute a respective scanner di
 Add the following snippet to the script section of your `bitbucket-pipelines.yml` file:
 
 ```yaml
-- pipe: sonarsource/sonarcloud-scan:0.1.4
+- pipe: sonarsource/sonarcloud-scan:0.1.5
   variables:
     SONAR_TOKEN: ${SONAR_TOKEN} # Use a secure repository or account variable
     # EXTRA_ARGS: "<string>" # Optional.
@@ -35,7 +35,7 @@ To use this pipe you have to set up a project on SonarCloud, then use the genera
 Basic example:
 
 ```yaml
-- pipe: sonarsource/sonarcloud-scan:0.1.4
+- pipe: sonarsource/sonarcloud-scan:0.1.5
   variables:
     SONAR_TOKEN: ${SONAR_TOKEN}
 ```
@@ -43,7 +43,7 @@ Basic example:
 A bit more advanced example:
 
 ```yaml
-- pipe: sonarsource/sonarcloud-scan:0.1.4
+- pipe: sonarsource/sonarcloud-scan:0.1.5
   variables:
     SONAR_TOKEN: ${SONAR_TOKEN}
     EXTRA_ARGS: -Dsonar.projectDescription=\"Project with sonarcloud-scan pipe\" -Dsonar.eslint.reportPaths=\"report.json\"
