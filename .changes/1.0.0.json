@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Add SONAR_TOKEN default variable",
+    "type": "major"
+  },
+  {
+    "description": "Write scanner output to BITBUCKET_PIPE_STORAGE_DIR",
+    "type": "patch"
+  }
+]

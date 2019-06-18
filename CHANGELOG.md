@@ -1,6 +1,11 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
+## 1.0.0
+
+- major: Add SONAR_TOKEN default variable
+- patch: Write scanner output to BITBUCKET_PIPE_STORAGE_DIR
+
 ## 0.1.5
 
 - patch: Standardise pipe variable validation messages.

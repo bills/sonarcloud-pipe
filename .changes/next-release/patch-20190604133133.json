@@ -1,4 +1,0 @@
-{
-  "type": "patch",
-  "description": "Write scanner output to BITBUCKET_PIPE_STORAGE_DIR"
-}
