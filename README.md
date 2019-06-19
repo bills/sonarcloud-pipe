@@ -12,6 +12,10 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 
 ```yaml
 - pipe: sonarsource/sonarcloud-scan:1.0.0
+  # variables:
+  #   EXTRA_ARGS: '<string>'  # Optional
+  #   SONAR_SCANNER_OPTS: '<string>'  # Optional
+  #   DEBUG: '<boolean>'  # Optional
 ```
 
 ## Variables
