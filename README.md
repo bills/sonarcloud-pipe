@@ -13,6 +13,7 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 ```yaml
 - pipe: sonarsource/sonarcloud-scan:1.0.0
   # variables:
+  #   SONAR_TOKEN: '<string>'  # Optional
   #   EXTRA_ARGS: '<string>'  # Optional
   #   SONAR_SCANNER_OPTS: '<string>'  # Optional
   #   DEBUG: '<boolean>'  # Optional
@@ -54,6 +55,8 @@ A bit more advanced example:
     SONAR_SCANNER_OPTS: -Xmx512m
     DEBUG: "true"
 ```
+
+This example uses a custom description of the project on SonarCloud, reads the report produced by eslint, sets maximum memory to 512MB, and enables verbose output.
 
 ## Support
 
