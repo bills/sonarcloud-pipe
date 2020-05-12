@@ -1,5 +1,10 @@
 # Changelog
+
 Note: version releases in the 0.x.y range may introduce breaking changes.
+
+## 1.1.0
+
+- minor: Updated version of Sonar Scanner to Version 4.3.0.2102
 
 ## 1.0.1
 
@@ -33,4 +38,3 @@ Note: version releases in the 0.x.y range may introduce breaking changes.
 ## 0.1.0
 
 - minor: Initial version of the pipe
-

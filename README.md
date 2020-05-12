@@ -11,7 +11,7 @@ _NOTE: For projects using Maven or Gradle please execute a respective scanner di
 Add the following snippet to the script section of your `bitbucket-pipelines.yml` file:
 
 ```yaml
-- pipe: sonarsource/sonarcloud-scan:1.0.1
+- pipe: sonarsource/sonarcloud-scan:1.1.0
   # variables:
   #   SONAR_TOKEN: '<string>'  # Optional
   #   EXTRA_ARGS: '<string>'  # Optional
@@ -21,14 +21,14 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 
 ## Variables
 
-| Variable           | Usage                                                       |
-| --------------------- | ----------------------------------------------------------- |
-| SONAR_TOKEN (*) | SonarCloud token. It is recommended to use a secure repository or account variable. And in this case there is no need to specify this variable in the `bitbucket-pipelines.yml` file. |
-| EXTRA_ARGS      | Extra analysis parameters (check [docs](https://sonarcloud.io/documentation/analysis/analysis-parameters/)) |
-| SONAR_SCANNER_OPTS      | Scanner JVM options (e.g. "-Xmx256m") |
-| DEBUG           | Turn on extra debug information. Default: `false`. | 
+| Variable           | Usage                                                                                                                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SONAR_TOKEN (\*)   | SonarCloud token. It is recommended to use a secure repository or account variable. And in this case there is no need to specify this variable in the `bitbucket-pipelines.yml` file. |
+| EXTRA_ARGS         | Extra analysis parameters (check [docs](https://sonarcloud.io/documentation/analysis/analysis-parameters/))                                                                           |
+| SONAR_SCANNER_OPTS | Scanner JVM options (e.g. "-Xmx256m")                                                                                                                                                 |
+| DEBUG              | Turn on extra debug information. Default: `false`.                                                                                                                                    |
 
-_(*) = required variable._
+_(\*) = required variable._
 
 ## Details
 
@@ -43,13 +43,13 @@ To use this pipe you have to set up a project on SonarCloud, then use the genera
 Basic example:
 
 ```yaml
-- pipe: sonarsource/sonarcloud-scan:1.0.1
+- pipe: sonarsource/sonarcloud-scan:1.1.0
 ```
 
 A bit more advanced example:
 
 ```yaml
-- pipe: sonarsource/sonarcloud-scan:1.0.1
+- pipe: sonarsource/sonarcloud-scan:1.1.0
   variables:
     EXTRA_ARGS: -Dsonar.projectDescription=\"Project with sonarcloud-scan pipe\" -Dsonar.eslint.reportPaths=\"report.json\"
     SONAR_SCANNER_OPTS: -Xmx512m
@@ -64,6 +64,6 @@ If you would like help with this pipe, or you have an issue or feature request, 
 
 If you are reporting an issue, please include:
 
-* the version of the pipe
-* relevant logs and error messages
-* steps to reproduce
+- the version of the pipe
+- relevant logs and error messages
+- steps to reproduce
