@@ -22,10 +22,18 @@ For example, a change that will bump the minor version, say from 0.0.0 to 0.1.0:
 
     semversioner add-change --type minor --description 'Check quality gate'
 
-To test what will happen during the release, try this (will modify working tree but not commit):
+Commands like the above create files in `.changes/next-release`. Add those
+files to version control. Do not update the version in other files manually,
+such as the `CHANGELOG.md` file or `.changes/*.json` files. Our release
+script relies on `.changes/next-release` and `semversioner` to determine
+the previous and new versions, and updating all the relevant files.
 
-    semversioner release
-    semversioner changelog
+---
+
+If you want to see how the files will change after the release process,
+then in a clean working tree (no uncommitted changes), you can manually run
+the script `./ci-scripts/bump-version.sh` and look at `git diff`.
+Do not commit the changes, reset with `git reset --hard`.
 
 Preparing a branch for validation by PM
 ---------------------------------------
