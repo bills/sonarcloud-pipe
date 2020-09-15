@@ -1,0 +1,6 @@
+[
+  {
+    "description": "Using NodeJs with version 12.18.3, and Sonar Scanner with version 4.4.0.2170",
+    "type": "minor"
+  }
+]
