@@ -1,12 +1,19 @@
 name: SonarCloud scan
-description: Detect bugs & vulnerabilities in your repository
 image: sonarsource/sonarcloud-scan:1.2.0
+category: Code quality
+description: Detect bugs & vulnerabilities in your repository
+repository: https://bitbucket.org/sonarsource/sonarcloud-scan
 variables:
   - name: SONAR_TOKEN
     default: '${SONAR_TOKEN}'
-repository: https://bitbucket.org/sonarsource/sonarcloud-scan
-maintainer: contact@sonarsource.com
-icon: https://sonarcloud.io/images/sonarcloud-square-logo.svg
+maintainer:
+  name: SonarSource
+  website: https://www.sonarsource.com/
+  email: contact@sonarsource.com
+vendor:
+  name: SonarSource
+  website: https://www.sonarsource.com/
+  email: contact@sonarsource.com
 tags:
   - SonarCloud
   - SonarSource
