@@ -1,6 +1,10 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
+## 1.2.1
+
+- patch: Updating pipes.yml to match Bitbucket documentation standards
+
 ## 1.2.0
 
 - minor: Using NodeJs with version 12.18.3, and Sonar Scanner with version 4.4.0.2170
