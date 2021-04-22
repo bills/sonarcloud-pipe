@@ -15,10 +15,10 @@ parse_environment_variables
 IFS=$'\n' ALL_ARGS=( $(xargs -n1 <<<"${EXTRA_ARGS}") )
 
 if [[ "${DEBUG}" == "true" ]]; then
-    ALL_ARGS+=( "-Dsonar.verbose=true" )
-    debug "SONAR_SCANNER_OPTS: ${SONAR_SCANNER_OPTS}"
-    debug "EXTRA_ARGS: ${EXTRA_ARGS}"
-    debug "Final analysis parameters:\n${ALL_ARGS[@]}"
+  ALL_ARGS+=( "-Dsonar.verbose=true" )
+  debug "SONAR_SCANNER_OPTS: ${SONAR_SCANNER_OPTS}"
+  debug "EXTRA_ARGS: ${EXTRA_ARGS}"
+  debug "Final analysis parameters:\n${ALL_ARGS[@]}"
 fi
 
 (sonar-scanner "${ALL_ARGS[@]}" 2>&1 | tee "${SCANNER_REPORT}") || true
