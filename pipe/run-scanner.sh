@@ -21,7 +21,9 @@ if [[ "${DEBUG}" == "true" ]]; then
   debug "Final analysis parameters:\n${ALL_ARGS[@]}"
 fi
 
-(sonar-scanner "${ALL_ARGS[@]}" 2>&1 | tee "${SCANNER_REPORT}") || true
+sonar-scanner "${ALL_ARGS[@]}" 2>&1 | tee "${SCANNER_REPORT}" || {
+  fail "SonarCloud analysis failed. (exit code = $?)"
+}
 
 if grep -q "EXECUTION SUCCESS" "${SCANNER_REPORT}"
 then
