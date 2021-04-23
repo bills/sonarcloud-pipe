@@ -1,0 +1,6 @@
+[
+  {
+    "description": "Print exit code when scanner fails",
+    "type": "patch"
+  }
+]

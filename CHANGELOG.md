@@ -1,6 +1,10 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
+## 1.2.2
+
+- patch: Print exit code when scanner fails
+
 ## 1.2.1
 
 - patch: Updating pipes.yml to match Bitbucket documentation standards
