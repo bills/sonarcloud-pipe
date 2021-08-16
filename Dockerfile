@@ -1,4 +1,4 @@
-FROM openjdk:11.0.2-jre-slim-stretch
+FROM openjdk:11.0.3-jre-slim-stretch
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git mercurial wget \
     && rm -rf /var/lib/apt/lists/*
@@ -7,9 +7,9 @@ ARG SONAR_SCANNER_HOME=/opt/sonar-scanner
 ARG NODEJS_HOME=/opt/nodejs
 
 ENV SONAR_SCANNER_HOME=${SONAR_SCANNER_HOME} \
-    SONAR_SCANNER_VERSION=4.4.0.2170 \
+    SONAR_SCANNER_VERSION=4.6.2.2472 \
     NODEJS_HOME=${NODEJS_HOME} \
-    NODEJS_VERSION=v12.18.3 \
+    NODEJS_VERSION=v12.22.5 \
     PATH=${PATH}:${SONAR_SCANNER_HOME}/bin:${NODEJS_HOME}/bin \
     NODE_PATH=${NODEJS_HOME}/lib/node_modules
 
