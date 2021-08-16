@@ -1,5 +1,5 @@
 name: SonarCloud scan
-image: sonarsource/sonarcloud-scan:1.2.2
+image: sonarsource/sonarcloud-scan:1.3.0
 category: Code quality
 description: Detect bugs & vulnerabilities in your repository
 repository: https://bitbucket.org/sonarsource/sonarcloud-scan
