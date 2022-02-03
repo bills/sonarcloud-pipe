@@ -1,6 +1,10 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
+## 1.4.0
+
+- minor: Update NodeJS to latest LTS (16)
+
 ## 1.3.0
 
 - minor: Using NodeJs with version 12.22.5, and Sonar Scanner with version 4.6.2.2472

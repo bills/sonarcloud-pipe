@@ -1,0 +1,6 @@
+[
+  {
+    "description": "Update NodeJS to latest LTS (16)",
+    "type": "minor"
+  }
+]
