@@ -24,9 +24,25 @@ build-docker-qa: &build-docker-qa
     services:
       - docker
 
+sbom: &sbom
+  step:
+    name: Generate sbom
+    script:
+      - export SYFT_VERSION=v0.45.1
+      - export SYFT_INSTALLER_SHA256=a6dfabcd60ec8b09a8269d5efda8c797ad9657567cd723306f5cfc3fcb07b79b
+      - curl -sSfL https://raw.githubusercontent.com/anchore/syft/$SYFT_VERSION/install.sh -o install.sh
+      - echo "$SYFT_INSTALLER_SHA256  install.sh"|sha256sum -c -
+      - sh ./install.sh $SYFT_VERSION
+      - ./bin/syft sonarsource/$BITBUCKET_REPO_SLUG -o cyclonedx-json=sbom.json
+    services:
+      - docker
+    artifacts:
+      - sbom.json
+
 pipelines:
   custom:
     release:
       - <<: *release
+      - <<: *sbom
     build-docker-qa:
       - <<: *build-docker-qa
