@@ -24,7 +24,7 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 | Variable           | Usage                                                                                                                                                                                 |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SONAR_TOKEN (\*)   | SonarCloud token. It is recommended to use a secure repository or account variable. And in this case there is no need to specify this variable in the `bitbucket-pipelines.yml` file. |
-| EXTRA_ARGS         | Extra analysis parameters (check [docs](https://sonarcloud.io/documentation/analysis/analysis-parameters/))                                                                           |
+| EXTRA_ARGS         | Extra analysis parameters (check [docs](https://docs.sonarcloud.io/advanced-setup/analysis-parameters/))                                                                           |
 | SONAR_SCANNER_OPTS | Scanner JVM options (e.g. "-Xmx256m")                                                                                                                                                 |
 | DEBUG              | Turn on extra debug information. Default: `false`.                                                                                                                                    |
 
@@ -32,7 +32,7 @@ _(\*) = required variable._
 
 ## Details
 
-This pipe encapsulates the execution of SonarCloud code analyzer in order to detect bugs, vulnerabilities and code smells. SonarCloud can then decorate your Pull Requests and report back with code quality information. Getting started guide available here: [Get started with Bitbucket Cloud](https://sonarcloud.io/documentation/integrations/bitbucketcloud/).
+This pipe encapsulates the execution of SonarCloud code analyzer in order to detect bugs, vulnerabilities and code smells. SonarCloud can then decorate your Pull Requests and report back with code quality information. Getting started guide available here: [Get started with Bitbucket Cloud](https://docs.sonarcloud.io/appendices/bitbucket-cloud-integration/).
 
 ## Prerequisites
 
