@@ -1,10 +1,6 @@
 # Changelog
 Note: version releases in the 0.x.y range may introduce breaking changes.
 
-## 1.4.1
-
-- patch: Updated documentation links
-
 ## 1.4.0
 
 - minor: Update NodeJS to latest LTS (16)
