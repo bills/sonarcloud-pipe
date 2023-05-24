@@ -1,4 +1,4 @@
-FROM openjdk:11.0.3-jre-slim-stretch
+FROM openjdk:11.0.3-jre-slim-buster
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git wget \
     && rm -rf /var/lib/apt/lists/*
