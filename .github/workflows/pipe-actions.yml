@@ -1,7 +1,7 @@
 name: bb-pipe-build
 on: [push]
 env:
-   REGISTORY: ghcr.io
+   REGISTRY: ghcr.io
    IMAGE_NAME: ${{ github.repository }}
 jobs:
   docker_build:
