@@ -1,6 +1,6 @@
 FROM openjdk:11.0.3-slim-buster
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git unzip wget \
+    && apt-get install -y --no-install-recommends git unzip xz-utils wget \
     && rm -rf /var/lib/apt/lists/*
 
 ARG SONAR_SCANNER_HOME=/opt/sonar-scanner
@@ -20,11 +20,11 @@ RUN wget -U "scannercli" -q -O sonar-scanner-cli.zip https://binaries.sonarsourc
     && rm sonar-scanner-cli.zip \
     && mv sonar-scanner-${SONAR_SCANNER_VERSION} ${SONAR_SCANNER_HOME}
 
-RUN wget -U "nodejs" -q -O nodejs.tar.xz https://nodejs.org/dist/${NODEJS_VERSION}/node-${NODEJS_VERSION}-linux-x64.tar.xz \
-    && tar Jxf nodejs.tar.xz \
-    && rm nodejs.tar.xz \
-    && mv node-${NODEJS_VERSION}-linux-x64 ${NODEJS_HOME} \
-    && npm install -g typescript
+RUN wget -U "nodejs" -q -O nodejs.tar.xz https://nodejs.org/dist/${NODEJS_VERSION}/node-${NODEJS_VERSION}-linux-x64.tar.xz 
+    # && tar Jxf nodejs.tar.xz \
+    # && rm nodejs.tar.xz \
+    # && mv node-${NODEJS_VERSION}-linux-x64 ${NODEJS_HOME} \
+    # && npm install -g typescript
 
 COPY pipe /usr/bin/
 RUN chmod 755 /usr/bin/run-scanner.sh
